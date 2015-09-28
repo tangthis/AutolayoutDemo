@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4rf-GR-j4m">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -35,6 +35,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4oN-IN-2o6">
+            <objects>
+                <viewController id="4rf-GR-j4m" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ZH-Oa-WtT"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJo-9K-jW8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kKH-xY-TWo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUy-SV-fr1">
+                                <rect key="frame" x="50" y="50" width="500" height="500"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RUy-SV-fr1" firstAttribute="leading" secondItem="kKH-xY-TWo" secondAttribute="leading" constant="50" id="4ma-16-dRn"/>
+                            <constraint firstAttribute="trailing" secondItem="RUy-SV-fr1" secondAttribute="trailing" constant="50" id="aXQ-gg-RE1"/>
+                            <constraint firstAttribute="bottom" secondItem="RUy-SV-fr1" secondAttribute="bottom" constant="50" id="aYv-R4-nvL"/>
+                            <constraint firstItem="RUy-SV-fr1" firstAttribute="top" secondItem="kKH-xY-TWo" secondAttribute="top" constant="50" id="gLl-Um-mek"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CI0-CQ-afk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413" y="1016"/>
         </scene>
     </scenes>
 </document>
