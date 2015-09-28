@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4rf-GR-j4m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gZO-yB-P78">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -35,6 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="449" y="-1"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4oN-IN-2o6">
@@ -64,7 +65,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CI0-CQ-afk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413" y="1016"/>
+            <point key="canvasLocation" x="435" y="682"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tf9-mY-d5E">
+            <objects>
+                <viewController id="gZO-yB-P78" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XeU-dB-zNH"/>
+                        <viewControllerLayoutGuide type="bottom" id="gtN-fM-3Qd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lUm-jH-irM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EH2-rp-hXh" userLabel="红色View">
+                                <rect key="frame" x="20" y="530" width="270" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Qe-oI-avM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeR-pC-gq6" userLabel="蓝色View">
+                                <rect key="frame" x="310" y="530" width="270" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gtN-fM-3Qd" firstAttribute="top" secondItem="XeR-pC-gq6" secondAttribute="bottom" constant="20" id="0iU-HL-Tm6"/>
+                            <constraint firstItem="XeR-pC-gq6" firstAttribute="height" secondItem="EH2-rp-hXh" secondAttribute="height" id="3Ql-Ji-wF3"/>
+                            <constraint firstItem="EH2-rp-hXh" firstAttribute="leading" secondItem="lUm-jH-irM" secondAttribute="leading" constant="20" id="GtQ-Y5-nGt"/>
+                            <constraint firstAttribute="bottom" secondItem="EH2-rp-hXh" secondAttribute="bottom" constant="20" id="NFz-Mt-5cd"/>
+                            <constraint firstItem="EH2-rp-hXh" firstAttribute="leading" secondItem="lUm-jH-irM" secondAttribute="leading" id="R0R-6m-TLr"/>
+                            <constraint firstItem="XeR-pC-gq6" firstAttribute="leading" secondItem="EH2-rp-hXh" secondAttribute="trailing" constant="20" id="fvw-rL-glz"/>
+                            <constraint firstAttribute="trailing" secondItem="XeR-pC-gq6" secondAttribute="trailing" constant="20" id="izo-Ok-bQf"/>
+                            <constraint firstItem="XeR-pC-gq6" firstAttribute="width" secondItem="EH2-rp-hXh" secondAttribute="width" id="zks-bd-5Nr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="R0R-6m-TLr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vQ-Lq-XXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="1435"/>
         </scene>
     </scenes>
 </document>
